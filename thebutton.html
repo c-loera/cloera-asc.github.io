@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<title>lmao</title>
+	<style>
+    	p {
+	        /*fontnames with backups in case first ones aren't installed for user's computer*/
+	        font-family: 'helvetica neue', helvetica, sans-serif;
+	       letter-spacing: 1px;
+	        text-transform: uppercase;
+	        text-align: center;
+	        border: 2px solid rgba(0,0,200,0.6);
+	        background: rgba(0,0,200,0.3);
+	        color: rgba(0,0,200,0.6);
+	        box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
+	        border-radius: 10px;
+	        padding: 3px 10px;
+	        display: inline-block;
+
+	        /*converts mouse to a pointer when on this tag*/
+	        cursor:pointer;}
+	</style>
+</head>
+<body>
+<p>
+	and his name is...lebron james	
+
+</p>
+<script type="text/javascript">
+	var	para=$('p');
+	para.click(updateName);
+	function updateName() {
+		var name = prompt('Enter a new name');
+		para.text("His name is now..."+name);
+
+	}
+</script>
+</body>
+</html>
+
